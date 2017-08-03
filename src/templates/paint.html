@@ -1,0 +1,30 @@
+<div  layout="row" ng-controller="paintController" flex-gt-sm>
+    <span layout="column" flex-gt-sm="10"></span>
+    <div layout="column" flex-gt-sm>
+        <div layout="row" layout-wrap>
+         
+        <md-card  layout-margin  flex="30" ng-repeat="img in images">
+        <a data-lightbox="paintings" href="{{img.id}}" >
+           <img src="{{img.id}}" style="width:25rem;height:25rem;">
+           <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline" style= "color:black">{{img.title}}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p class="md-body-2" style= "color:black;">PRICE:<b>{{img.price}}</b></p>
+          <p class="md-body-1" style= "color:black">DESCRIPTION:<br>{{img.Description}}</p>
+        </md-card-content>
+           </a>
+<!--             <div ng-show="showFlip[img.id]"> -->
+<!--                 <h3 class="md-body-2" flex> <b> Date :</b> {{time | date}}</h3> -->
+<!--                 <h3 class="md-body-2" flex> <b> Price :</b> {{img.price}}</h3> -->
+<!--                 <h3 class="md-body-2" flex> <b> Description :</b> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h3> -->
+<!--                 <md-button class="md-primary" ng-click="flipOnce(img)">show Painting</md-button> -->
+<!--                 <md-button class="md-primary" ng-click="addCart()">Add to Cart</md-button> -->
+<!--             </div> -->
+
+        </md-card>
+    	</div>
+    	</div>
+    </div>
