@@ -1,0 +1,17 @@
+{
+  "name": "paint",
+  "description": "paint app",
+  "main": "server.js",
+  "authors": [
+    "shruti3033 <meda2340@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/shruti3033/paintapplication",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
